@@ -1,5 +1,6 @@
 * {
     font-family: 'Source Code Pro', monospace;
+    box-sizing: border-box;
 }
 
 body {
@@ -14,17 +15,25 @@ header h1{
 main {
     order: 1;
     width: 75%;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
 }
 
 aside {
     order: 0;
     width: auto;
-    margin: 5px 15px;
+    margin: 0 15px;
     background-color: #c43f5a; 
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    /* text-align: center; */
+}
+
+.me {
+    text-align: center;
 }
 
 aside h2 {
@@ -35,23 +44,55 @@ aside p {
     margin: 5px;
 }
 
+aside ul {
+
+}
+
+aside ul li {
+    list-style: none;
+}
+
 .container {
     display: flex;
 }
 
+aside ul li {
+    display: flex;
+    flex-direction: column;
+}
 .portrait {
     text-align: center;
+    /* box-shadow: 1px 1px 1px rgba(0, 0, 0, .5); */
     margin: 15px 15px;
+    border-radius: 50%;
 }
 
 .portrait img {
     width: 256px;
     height: 256px;
+    border-radius: 50%;
+    /* border: 1px solid black; */
+    box-shadow: 0px 0px 15px black;
 }
 
 section {
     margin: 5px;
 }
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.contacts p {
+    /* font-size: 14px; */
+    display: flex;
+    align-items: center;
+    white-space: normal;
+    justify-content: flex-start;
+}
+
 
 footer {
     bottom: 0px;
